@@ -1,3 +1,4 @@
-h1{
-    color:red;
+$color-blue: #ff5733;
+h1,p,a{
+    color:$color-blue;
 }
