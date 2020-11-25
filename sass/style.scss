@@ -1,12 +1,6 @@
-@mixin commonproperty{
-    $color-blue: #ff5733;
-    font-size: '20px';
-    line-height: 1;
-    font-weight: 'bold';
-}
+@import 'variable';
+@import 'mixin'
 
-$color-blue: #ff5733;
-$color-menu: #0911f2;
 
 h1,p,a{
     @include commonproperty;
