@@ -1,8 +1,15 @@
+@mixin commonproperty{
+    $color-blue: #ff5733;
+    font-size: '20px';
+    line-height: 1;
+    font-weight: 'bold';
+}
+
 $color-blue: #ff5733;
 $color-menu: #0911f2;
 
 h1,p,a{
-    color: $color-blue;
+    @include commonproperty;
 }
 
 ///Nesting Method in Pure css
@@ -19,7 +26,8 @@ div{
         li{
             list-style-type: none;
             a{
-               color: $color-menu;
+               @include commonproperty;
+               text-decoration: none;
             }
         }
     }
