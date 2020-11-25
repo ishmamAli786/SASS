@@ -1,4 +1,26 @@
 $color-blue: #ff5733;
+$color-menu: #0911f2;
+
 h1,p,a{
-    color:$color-blue;
+    color: $color-blue;
+}
+
+///Nesting Method in Pure css
+// div ul li a{
+//     color: $color-menu;
+// }
+
+
+
+/// Nesting Method in SASS
+div{
+    background-color: $color-blue;
+    ul{
+        li{
+            list-style-type: none;
+            a{
+               color: $color-menu;
+            }
+        }
+    }
 }
